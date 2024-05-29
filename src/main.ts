@@ -80,6 +80,7 @@ async function analyzeCode(
 
 function createPrompt(file: File, chunk: Chunk, prDetails: PRDetails): string {
   return `Tu tarea es revisar las pulls requests. Instrucciones:
+- Escribeme en español
 - Da la respuesta en el siguiente formato JSON: {"reviews": [{"lineNumber":  <line_number>, "reviewComment": "<review comment>"}]} 
 - No des comentarios positivos.
 - Da comentarios y sugerencias SOLO si hay algo que mejorar, en otro caso "reviews" debe ser un array vacio.
